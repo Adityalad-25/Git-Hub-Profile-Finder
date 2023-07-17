@@ -1,7 +1,7 @@
 # GITHUB-PROFILE-FINDER
 
 ## Demo
-Live Demo: [<link heref=" "> click here<link/>](https://adityalad-25.github.io/Git-Hub-Profile-Finder/)
+Live Demo:[ click here](http://lnkiy.in/Git-Hub-Profile-Finder)
 
 ## UI DESIGN 
 
