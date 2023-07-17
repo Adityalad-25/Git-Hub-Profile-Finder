@@ -146,7 +146,7 @@
     height:100%;
     /* border:2px solid white; */
     color:#ffffff;
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -365,7 +365,7 @@
 
 }
 
-@media (max-width:1067px) and {
+@media (max-width:1067px)  {
     .wrap{
         width:70vw;
     }
