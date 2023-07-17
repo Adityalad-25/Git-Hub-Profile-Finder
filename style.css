@@ -1,0 +1,454 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.wrap{
+    width:50%;
+    height:90%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+   /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+
+    
+    
+}
+
+#box-1{
+    width:100%;
+    height:8%;
+   
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    
+}
+
+#input{
+    height:100%;
+    width:45%;
+    font-size: 25px;
+    color:darkorchid;
+    font-weight: bold;
+    overflow: hidden;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+#search{
+    background-color: #C850C0;
+    /* border: 2px solid white; */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+
+#search:hover{
+    background-color:rgb(223, 58, 242);
+   
+
+  }
+
+#box-2{
+    height:50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content:center;
+}
+
+
+#prof-img{
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+   margin-bottom: 15px; 
+   border-color:#f1f1f1;   
+
+}
+.welcome {
+    font-size:1.5rem;
+    font-weight: bold;
+    color:white;
+}
+.all{
+    margin-bottom: 1rem;
+}
+#username{
+    font-size: 25px;
+    cursor:pointer;
+    color:white;
+    text-decoration: none;
+
+}
+#username:hover{
+    color:rgb(2, 0, 6);
+    transform: scale(1,1);
+    font-weight:bold;
+
+
+}
+#name{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#box-3{
+    height:15%;
+    color:white;
+    display:flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    text-overflow: hidden;
+    size-adjust: auto;
+   
+    
+ 
+
+
+}
+.bio-title{
+    width:30%;
+    height:100%;
+    border-right:1px solid white;
+    /* border:2px solid rgb(255, 255, 255); */
+    padding:49px;
+    padding-left: 1.5px;
+    font-size: 35px;
+}
+.bio{
+    width:70%;
+    height:100%;
+    /* border:2px solid white; */
+    color:#ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#box-4{
+    height:15%;
+
+    
+}
+
+.other {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    border-top: 1px solid grey;
+  }
+  .other a {
+    width: 50%;
+    height:100%;
+    border: 1px solid rgba(255, 253, 253, 0.438);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-size:2rem;
+    color:white;
+
+  }
+  #followers,
+  #following {
+    font-size: 2rem;
+    font-weight: bold;
+    height:100%;
+    color:white;
+  }
+
+
+#box-5{
+    height:13%;
+    width:100%;
+    background-color: #00DBDE;
+   background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        
+
+}
+ 
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-right:30px;
+  }
+
+
+/* ******************MEDIA QUIERIES *****************/
+
+
+  @media  (max-width:576px){
+      .container{
+       
+       
+      }
+      .wrap{
+        width:100vw;
+        display:flex;
+        flex-grow: 1;
+      }
+
+      #box-1{
+        width:100%;
+        height:7%;
+       
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid black;
+    }
+    
+    #input{
+        height:100%;
+        width:65%;
+        font-size:15px;
+        color:darkorchid;
+        font-weight: bold;
+        overflow: hidden;
+    }
+    
+    #search{
+      background-color:rgb(223, 58, 242);
+      border: none;
+      color: white;
+      /* padding: 15px 32px; */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size:15px;
+      font-weight: bold;
+      width:35%;
+    }
+
+    #box-2
+    {
+        
+        height:35%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        padding:1px;
+        overflow:hidden;
+    }
+    .welcome{
+        font-size:22px;
+        margin-top: 5px;
+
+    }
+
+    #prof-img{
+        height:70px;
+        width: 70px;
+        border-radius:70%;
+
+    }
+    #name{
+        font-size:25px;
+        font-weight:bold;
+    }
+    #username{
+        padding:3px;
+        margin-bottom: 20px;
+        font-size:large;
+        text-decoration: none;
+        cursor:pointer;
+        font-weight: bold;
+
+    }
+    #username:hover{
+        color:rgb(0, 0, 0);
+        transform: scale(1,1);
+        font-weight:bold;
+    }
+
+    #box-3{
+        height:27%;
+        color:white;
+        display:flex;
+        flex-direction: row;
+        /* align-items: center; */
+        /* justify-content: center; */
+        text-align: center;
+        text-overflow: hidden;
+        size-adjust: auto;
+        
+     
+    
+    
+    }
+    .bio-title{
+        width:30%;
+        height:100%;
+        border-right:1px solid white;
+        /* border:2px solid rgb(255, 255, 255); */
+        padding:49px;
+        padding-left: 1.5px;
+        font-size: 30px;
+    }
+    .bio{
+        width:70%;
+        height:100%;
+        /* border:2px solid white; */
+        color:#ffffff;
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width:440px)
+{
+    #box-3{
+        height:25%;
+        color:white;
+        display:flex;
+        flex-direction: row;
+        /* align-items: center; */
+        /* justify-content: center; */
+        text-align: center;
+        text-overflow: hidden;
+        size-adjust: auto;
+       
+    
+    
+    }
+    .bio-title{
+        width:30%;
+        height:100%;
+        border-right:1px solid white;
+        /* border:2px solid rgb(255, 255, 255); */
+        padding:49px;
+        padding-left: 1.5px;
+        font-size: 1.5rem;
+    }
+    .bio{
+        width:70%;
+        height:100%;
+        /* border:2px solid white; */
+        color:#ffffff;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:1067px)  {
+    .wrap{
+        width:70vw;
+    }
+
+    #box-2
+    {
+        
+        height:40%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        padding:1px;
+        overflow:hidden;
+    }
+    .welcome{
+        font-size:22px;
+        margin-top: 5px;
+
+    }
+
+    #prof-img{
+        height:70px;
+        width: 70px;
+        border-radius:70%;
+
+    }
+    #name{
+        font-size:25px;
+        font-weight:bold;
+    }
+    #username{
+        padding:3px;
+        margin-bottom: 20px;
+        font-size:large;
+        text-decoration: none;
+        cursor:pointer;
+        font-weight: bold;
+
+    }
+    #username:hover{
+        color:rgb(0, 0, 0);
+        font-weight:bold;
+        transform: scale(1,1);
+    }
+
+#box-3{
+        height:30%;
+        color:white;
+        display:flex;
+        flex-direction: row;
+        /* align-items: center; */
+        /* justify-content: center; */
+        text-align: center;
+        text-overflow: hidden;
+        size-adjust: auto;
+       
+     
+    
+    
+    }
+    .bio-title{
+        width:30%;
+        height:100%;
+        border-right:1px solid white;
+        /* border:2px solid rgb(255, 255, 255); */
+        padding:49px;
+        padding-left: 1.5px;
+        font-size: 30px;
+    }
+    .bio{
+        width:70%;
+        height:100%;
+        /* border:2px solid white; */
+        color:#ffffff;
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+/* https://i.ibb.co/PG6qVTZ/bg.web */

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/GitHub-Logo.wine.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/images.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Inter:wght@400;600;700&family=Josefin+Sans:wght@300;600;700&family=Open+Sans:wght@500&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Github Profile finder</title>
+</head>
+<body>
+
+
+  <div class="container">
+
+      <div class="wrap">
+
+        <div class="githubicon">
+
+        </div>
+        <div class="box" id="box-1">
+            <input type="text" name="username"  placeholder="Enter github username "id="input" autocomplete="off">
+            <button class="search button" id="search">Search</button>
+          </div>
+
+          <div class="box" id="box-2">
+            
+            <h1 class="welcome all">Welcome to Github Profile Finder!</h1>
+            <img src="https://avatars.githubusercontent.com/u/97255480?v=4" alt="" id="prof-img">
+            <span>Name</span>
+            <span class="name all " id="name">Aditya Lad</span>
+            <span>Username:</span>
+             <a class="all" href="" id="username">@adityalad-25</a>
+          </div>
+
+
+          <div class="box" id="box-3">
+            <div class="bio-title">About</div>
+            <div class="bio" id="bio">Student and Developer</div>
+            
+          </div>
+
+
+          <div class="box" id="box-4">
+            <div class="other">
+              <a id="flwrs-link"><span id="followers">0</span>Followers</a>
+              <a id="flwin-link"><span id="following">7</span>Following</a>
+            </div>
+
+          </div>
+
+
+          <div class="box footer " id="box-5">
+            <p>Made with ❤️ by Aditya  Lad </p>
+          </div>
+    </div> 
+      
+  </div>
+  <!-- <div class="container">
+      <div class="search-container">
+         <input type="text" name="username"  placeholder="Enter github username "id="input" autocomplete="off">
+         <button class="search" id="search">Search</button>
+      </div>
+      <div class="profile-card">
+
+           <div class="top">
+            <h1 class="welcome">Welcome to Github Profile Finder!</h1>
+            <img src="https://avatars.githubusercontent.com/u/97255480?v=4" alt="" id="prof-img">
+            <span class="name" id="name">Aditya Lad</span>
+            <a href="" id="username">@adityalad-25</a>
+            <div class="bio" id="bio">Student and Developer</div>
+           </div>
+
+           <div class="bottom">
+            <div class="other">
+              <a id="flwrs-link"><span id="followers">0</span>followers</a>
+              <a id="flwin-link"><span id="following">7</span>following</a>
+            </div>
+          </div>
+       </div>
+
+      
+       <div class="footer">
+         <p>Made with ❤️ by Aditya  Lad </p>
+       </div>
+  </div> -->
+
+  <!-- link for jquery attach refered w3schools -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+    $("#search").click(() => {
+        $.getJSON(
+          "https://api.github.com/users/" + $("#input").val(),
+          (data) => {
+            $("#prof-img").attr("src", data.avatar_url);
+            $("#name").html(data.name);
+            $("#username").html("@" + data.login);
+            $("#username").attr("href", data.html_url);
+            $("#bio").html(data.bio);
+            $("#followers").html(data.followers);
+            $("#following").html(data.following);
+            $("#flwrs-link").attr(
+              "href",
+              "https://github.com/" + data.login + "?tab=followers"
+            );
+            $("#flwin-link").attr(
+              "href",
+              "https://github.com/" + data.login + "?tab=following"
+            );
+          }
+        );
+      });
+  </script>
+</body>
+</html>
+
+
+
+
+
