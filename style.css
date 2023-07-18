@@ -82,23 +82,24 @@
 
 
 #prof-img{
-    height:100px;
-    width: 100px;
+    height:200px;
+    width: 200px;
     border-radius: 50%;
    margin-bottom: 15px; 
    border-color:#f1f1f1;   
 
 }
 .welcome {
-    font-size:1.5rem;
+    font-size:2rem;
     font-weight: bold;
     color:white;
+    text-shadow:2px 2px #000000;
 }
 .all{
     margin-bottom: 1rem;
 }
 #username{
-    font-size: 25px;
+    font-size: 30px;
     cursor:pointer;
     color:white;
     text-decoration: none;
@@ -126,9 +127,8 @@
     text-align: center;
     text-overflow: hidden;
     size-adjust: auto;
-   
-    
- 
+    flex-basis: auto;
+    text-align: center;
 
 
 }
@@ -136,7 +136,7 @@
     width:30%;
     height:100%;
     border-right:1px solid white;
-    /* border:2px solid rgb(255, 255, 255); */
+    border:2px solid rgb(255, 255, 255);
     padding:49px;
     padding-left: 1.5px;
     font-size: 35px;
@@ -144,10 +144,13 @@
 .bio{
     width:70%;
     height:100%;
-    /* border:2px solid white; */
+    border:2px solid white;
     color:#ffffff;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
+    text-align: center;
+    /* flex-basis: */
+
 }
 
 #box-4{
@@ -184,6 +187,11 @@
     color:white;
   }
 
+#followers:hover,#following:hover{
+    color:#000;
+    font-size: large;
+
+}
 
 #box-5{
     height:13%;
@@ -207,6 +215,92 @@
 
 
 /* ******************MEDIA QUIERIES *****************/
+
+@media (max-width:1067px)  {
+    .wrap{
+        width:70vw;
+    }
+
+    #box-2
+    {
+        
+        height:40%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        padding:1px;
+        overflow:hidden;
+    }
+    .welcome{
+        font-size:22px;
+        margin-top: 5px;
+
+    }
+
+    #prof-img{
+        height:70px;
+        width: 70px;
+        border-radius:70%;
+
+    }
+    #name{
+        font-size:25px;
+        font-weight:bold;
+    }
+    #username{
+        padding:3px;
+        margin-bottom: 20px;
+        font-size:large;
+        text-decoration: none;
+        cursor:pointer;
+        font-weight: bold;
+
+    }
+    #username:hover{
+        color:rgb(0, 0, 0);
+        font-weight:bold;
+        transform: scale(1,1);
+    }
+
+#box-3{
+        height:30%;
+        color:white;
+        display:flex;
+        flex-direction: row;
+        /* align-items: center; */
+        /* justify-content: center; */
+        text-align: center;
+        text-overflow: hidden;
+        size-adjust: auto;
+       
+     
+    
+    
+    }
+    .bio-title{
+        width:30%;
+        height:100%;
+        border-right:1px solid white;
+        /* border:2px solid rgb(255, 255, 255); */
+        padding:49px;
+        padding-left: 1.5px;
+        font-size: 30px;
+    }
+    .bio{
+        width:70%;
+        height:100%;
+        /* border:2px solid white; */
+        /* color:#ffffff; */
+        font-size: 20px;
+        text-align: center;
+        flex-basis: auto;
+        overflow:hidden;
+        text-align: center;
+    }
+
+
+}
 
 
   @media  (max-width:576px){
@@ -322,7 +416,7 @@
         height:100%;
         /* border:2px solid white; */
         color:#ffffff;
-        font-size: 1.8em;
+        font-size: 1.2em;
         text-align: center;
     }
 
@@ -358,95 +452,17 @@
         width:70%;
         height:100%;
         /* border:2px solid white; */
-        color:#ffffff;
-        font-size: 1.5rem;
+        color:#ede4e4;
+        font-size: 20px;
         text-align: center;
+        flex-basis: auto;
+    }
+    .footer{
+        font-size: 20px;
     }
 
 }
 
-@media (max-width:1067px)  {
-    .wrap{
-        width:70vw;
-    }
-
-    #box-2
-    {
-        
-        height:40%;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:center;
-        padding:1px;
-        overflow:hidden;
-    }
-    .welcome{
-        font-size:22px;
-        margin-top: 5px;
-
-    }
-
-    #prof-img{
-        height:70px;
-        width: 70px;
-        border-radius:70%;
-
-    }
-    #name{
-        font-size:25px;
-        font-weight:bold;
-    }
-    #username{
-        padding:3px;
-        margin-bottom: 20px;
-        font-size:large;
-        text-decoration: none;
-        cursor:pointer;
-        font-weight: bold;
-
-    }
-    #username:hover{
-        color:rgb(0, 0, 0);
-        font-weight:bold;
-        transform: scale(1,1);
-    }
-
-#box-3{
-        height:30%;
-        color:white;
-        display:flex;
-        flex-direction: row;
-        /* align-items: center; */
-        /* justify-content: center; */
-        text-align: center;
-        text-overflow: hidden;
-        size-adjust: auto;
-       
-     
-    
-    
-    }
-    .bio-title{
-        width:30%;
-        height:100%;
-        border-right:1px solid white;
-        /* border:2px solid rgb(255, 255, 255); */
-        padding:49px;
-        padding-left: 1.5px;
-        font-size: 30px;
-    }
-    .bio{
-        width:70%;
-        height:100%;
-        /* border:2px solid white; */
-        color:#ffffff;
-        font-size: 1.8em;
-        text-align: center;
-    }
-
-
-}
 
 
 
